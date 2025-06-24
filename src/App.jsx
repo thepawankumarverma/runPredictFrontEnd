@@ -20,7 +20,7 @@ const App = () => {
   const predictRuns = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://127.0.0.1:4000/predict-run", {
+      const response = await fetch("https://predicsrunapi.onrender.com/predict-run", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
